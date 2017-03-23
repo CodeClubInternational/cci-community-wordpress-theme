@@ -33,29 +33,29 @@ ob_start();
 <?php DISPLAY_ERRORS ? display_php_errors() : '' ?>
 
 <header class="o-nav">
-    <div class="o-nav__container u-clearfix">
-        <div class="c-logo">
-            <a href="<?= esc_url( home_url( '/' ) ); ?>" class="c-logo__link">
-                <img alt="Code Club Logo" class="c-logo__image" src="<?php echo get_template_directory_uri(); ?>/bower_components/code-club/dist/images/code-club-logo.svg">
-                <div class="c-logo__appendix"><?php bloginfo( 'name' ); ?></div>
-            </a>
-        </div>
+	<div class="o-nav__container u-clearfix">
+		<div class="c-logo">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="c-logo__link">
+				<img alt="Code Club Logo" class="c-logo__image" src="<?php echo get_template_directory_uri(); ?>/bower_components/code-club/dist/images/code-club-logo.svg">
+				<div class="c-logo__appendix"><?php bloginfo( 'name' ); ?></div>
+			</a>
+		</div>
 
-        <input class="o-nav__toggle-input" id="off-canvas-nav-toggle-input" type="checkbox">
-        <label class="o-nav__toggle-label" for="off-canvas-nav-toggle-input"><span></span></label>
+		<input class="o-nav__toggle-input" id="off-canvas-nav-toggle-input" type="checkbox">
+		<label class="o-nav__toggle-label" for="off-canvas-nav-toggle-input"><span></span></label>
 
-        <nav class="o-nav__list-container">
-        <?php
-        if ( has_nav_menu( 'primary_navigation' ) ) :
-            wp_nav_menu( [
-                'theme_location' => 'primary_navigation',
-                'menu_class' => 'o-nav__list',
-                'container' => false
-            ] );
-        endif;
-        ?>
-        </nav>
-    </div>
+		<nav class="o-nav__list-container">
+		<?php
+		if ( has_nav_menu( 'primary_navigation' ) ) :
+			wp_nav_menu( [
+				'theme_location' => 'primary_navigation',
+				'menu_class' => 'o-nav__list',
+				'container' => false,
+			] );
+		endif;
+		?>
+		</nav>
+	</div>
 </header>
 
 <main class="o-main">

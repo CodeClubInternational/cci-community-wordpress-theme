@@ -29,20 +29,20 @@ Tags:
 # Alignments
 --------------------------------------------------------------*/
 .alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em; }
+	display: inline;
+	float: left;
+	margin-right: 1.5em; }
 
 .alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em; }
+	display: inline;
+	float: right;
+	margin-left: 1.5em; }
 
 .aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; }
 
 /*--------------------------------------------------------------
 # Clearings
@@ -59,9 +59,9 @@ Tags:
 .site-content:after,
 .site-footer:before,
 .site-footer:after {
-  content: "";
-  display: table;
-  table-layout: fixed; }
+	content: "";
+	display: table;
+	table-layout: fixed; }
 
 .clear:after,
 .entry-content:after,
@@ -69,16 +69,16 @@ Tags:
 .site-header:after,
 .site-content:after,
 .site-footer:after {
-  clear: both; }
+	clear: both; }
 
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. */ }
-  .widget select {
-    max-width: 100%; }
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */ }
+	.widget select {
+	max-width: 100%; }
 
 /*--------------------------------------------------------------
 # Content
@@ -87,43 +87,43 @@ Tags:
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
-  display: block; }
+	display: block; }
 
 .hentry {
-  margin: 0 0 1.5em; }
+	margin: 0 0 1.5em; }
 
 .byline,
 .updated:not(.published) {
-  display: none; }
+	display: none; }
 
 .single .byline,
 .group-blog .byline {
-  display: inline; }
+	display: inline; }
 
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0; }
+	margin: 1.5em 0 0; }
 
 .page-links {
-  clear: both;
-  margin: 0 0 1.5em; }
+	clear: both;
+	margin: 0 0 1.5em; }
 
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-  display: none; }
+	display: none; }
 
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
 .comment-content a {
-  word-wrap: break-word; }
+	word-wrap: break-word; }
 
 .bypostauthor {
-  display: block; }
+	display: block; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
@@ -131,12 +131,12 @@ Tags:
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
-  /* Theme Footer (when set to scrolling) */
-  display: none; }
+	/* Theme Footer (when set to scrolling) */
+	display: none; }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
-  display: block; }
+	display: block; }
 
 /*--------------------------------------------------------------
 # Media
@@ -144,62 +144,62 @@ Tags:
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0; }
 
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
 object {
-  max-width: 100%; }
+	max-width: 100%; }
 
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {
-  margin-bottom: 1.5em;
-  max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .wp-caption .wp-caption-text {
-    margin: 0.8075em 0; }
+	margin-bottom: 1.5em;
+	max-width: 100%; }
+	.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto; }
+	.wp-caption .wp-caption-text {
+	margin: 0.8075em 0; }
 
 .wp-caption-text {
-  text-align: center; }
+	text-align: center; }
 
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
 .gallery {
-  margin-bottom: 1.5em; }
+	margin-bottom: 1.5em; }
 
 .gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%; }
-  .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
-  .gallery-columns-3 .gallery-item {
-    max-width: 33.33%; }
-  .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
-  .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
-  .gallery-columns-6 .gallery-item {
-    max-width: 16.66%; }
-  .gallery-columns-7 .gallery-item {
-    max-width: 14.28%; }
-  .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
-  .gallery-columns-9 .gallery-item {
-    max-width: 11.11%; }
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%; }
+	.gallery-columns-2 .gallery-item {
+	max-width: 50%; }
+	.gallery-columns-3 .gallery-item {
+	max-width: 33.33%; }
+	.gallery-columns-4 .gallery-item {
+	max-width: 25%; }
+	.gallery-columns-5 .gallery-item {
+	max-width: 20%; }
+	.gallery-columns-6 .gallery-item {
+	max-width: 16.66%; }
+	.gallery-columns-7 .gallery-item {
+	max-width: 14.28%; }
+	.gallery-columns-8 .gallery-item {
+	max-width: 12.5%; }
+	.gallery-columns-9 .gallery-item {
+	max-width: 11.11%; }
 
 .gallery-caption {
-  display: block; }
+	display: block; }
 
 /*# sourceMappingURL=style.css.map */

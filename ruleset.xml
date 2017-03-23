@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress-Theme">
+    <description>Coding standards for a WordPress Theme.</description>
+    <exclude-pattern>*/.sass-cache/*</exclude-pattern>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>inc/League/</exclude-pattern>
+    <exclude-pattern>wpcs/</exclude-pattern>
+    <rule ref="WordPress"/>
+</ruleset>

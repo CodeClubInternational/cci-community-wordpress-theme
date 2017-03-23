@@ -35,22 +35,20 @@ define( 'DISPLAY_ERRORS', false );
 /* Social Constants, uncomment to enable */
 
 // Provide the URL to your Facebook Page / Group
-#define( 'SOCIAL_FACEBOOK_URL', 'https://www.facebook.com/your-page-here' );
+// define( 'SOCIAL_FACEBOOK_URL', 'https://www.facebook.com/your-page-here' );
 // Provide the URL to your Twitter page
-#define( 'SOCIAL_TWITTER_URL', 'https://twitter.com/your-account-here' );
+// define( 'SOCIAL_TWITTER_URL', 'https://twitter.com/your-account-here' );
 // Provide the URL to your Google+ page or Google Group
-#define( 'SOCIAL_GOOGLE_URL', 'https://plus.google.com/your-account-here' );
+// define( 'SOCIAL_GOOGLE_URL', 'https://plus.google.com/your-account-here' );
 // Provide the URL to your YouTube channel
-#define( 'SOCIAL_YOUTUBE_URL', 'https://youtube.com/your-channel-here' );
-
-/* Download link to zip file with resources */
-#define( 'RESOURCES_FILE_URL', '');
-
-
+// define( 'SOCIAL_YOUTUBE_URL', 'https://youtube.com/your-channel-here' );
+/*
+ Download link to zip file with resources */
+// define( 'RESOURCES_FILE_URL', '');
 /* GOOGLE MAPS API */
 
-define( 'GOOGLE_MAPS_ADDRESS_END_POINT', 'https://maps.googleapis.com/maps/api/geocode/json?address=');
-define( 'GOOGLE_MAPS_API_KEY', '');
+define( 'GOOGLE_MAPS_ADDRESS_END_POINT', 'https://maps.googleapis.com/maps/api/geocode/json?address=' );
+define( 'GOOGLE_MAPS_API_KEY', '' );
 
 /* v2 Set up flags */
 define( 'GENERATE_LOG_IN_PAGES', false );

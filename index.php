@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-	<?php get_template_part('template-parts/page', 'header'); ?>
+	<?php get_template_part( 'template-parts/page', 'header' ); ?>
 
 	<div class="c-page-block">
 		<div class="c-grid c-grid--h-center">

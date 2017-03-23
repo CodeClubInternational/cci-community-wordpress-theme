@@ -7,72 +7,73 @@ use LogicException;
 /**
  * A collection of template functions.
  */
-class Functions
-{
-    /**
-     * Array of template functions.
-     * @var array
-     */
-    protected $functions = array();
+class Functions {
 
-    /**
-     * Add a new template function.
-     * @param  string    $name;
-     * @param  callback  $callback;
-     * @return Functions
-     */
-    public function add($name, $callback)
-    {
-        if ($this->exists($name)) {
-            throw new LogicException(
-                'The template function name "' . $name . '" is already registered.'
-            );
-        }
+	/**
+	 * Array of template functions.
+	 *
+	 * @var array
+	 */
+	protected $functions = array();
 
-        $this->functions[$name] = new Func($name, $callback);
+	/**
+	 * Add a new template function.
+	 *
+	 * @param  string   $name;
+	 * @param  callback $callback;
+	 * @return Functions
+	 */
+	public function add( $name, $callback ) {
+		if ( $this->exists( $name ) ) {
+			throw new LogicException(
+				'The template function name "' . $name . '" is already registered.'
+			);
+		}
 
-        return $this;
-    }
+		$this->functions[ $name ] = new Func( $name, $callback );
 
-    /**
-     * Remove a template function.
-     * @param  string    $name;
-     * @return Functions
-     */
-    public function remove($name)
-    {
-        if (!$this->exists($name)) {
-            throw new LogicException(
-                'The template function "' . $name . '" was not found.'
-            );
-        }
+		return $this;
+	}
 
-        unset($this->functions[$name]);
+	/**
+	 * Remove a template function.
+	 *
+	 * @param  string $name;
+	 * @return Functions
+	 */
+	public function remove( $name ) {
+		if ( ! $this->exists( $name ) ) {
+			throw new LogicException(
+				'The template function "' . $name . '" was not found.'
+			);
+		}
 
-        return $this;
-    }
+		unset( $this->functions[ $name ] );
 
-    /**
-     * Get a template function.
-     * @param  string $name
-     * @return Func
-     */
-    public function get($name)
-    {
-        if (!$this->exists($name)) {
-            throw new LogicException('The template function "' . $name . '" was not found.');
-        }
+		return $this;
+	}
 
-        return $this->functions[$name];
-    }
+	/**
+	 * Get a template function.
+	 *
+	 * @param  string $name
+	 * @return Func
+	 */
+	public function get( $name ) {
+		if ( ! $this->exists( $name ) ) {
+			throw new LogicException( 'The template function "' . $name . '" was not found.' );
+		}
 
-    /**
-     * Check if a template function exists.
-     * @param  string  $name
-     * @return boolean
-     */
-    public function exists($name)
-    {
-        return isset($this->functions[$name]);
-    }
+		return $this->functions[ $name ];
+	}
+
+	/**
+	 * Check if a template function exists.
+	 *
+	 * @param  string $name
+	 * @return boolean
+	 */
+	public function exists( $name ) {
+		return isset( $this->functions[ $name ] );
+	}
 }

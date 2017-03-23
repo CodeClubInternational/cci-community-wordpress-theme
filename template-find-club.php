@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-<?php get_template_part('template-parts/page', 'matching'); ?>
+<?php get_template_part( 'template-parts/page', 'matching' ); ?>
 
 <?php
 get_footer();
