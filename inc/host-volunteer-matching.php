@@ -4,7 +4,7 @@
  */
 class Host_Volunteer_Matching {
 
-  private $flash_messages;
+  protected $flash_messages;
 
   function __construct() {
     if (!isset($_SESSION)) {
@@ -13,29 +13,34 @@ class Host_Volunteer_Matching {
 
     $this->flash_messages = new Flash_Message();
   }
+    public function getCoordinates($address) {
+	 $url = GOOGLE_MAPS_ADDRESS_END_POINT . preg_replace('/\s+/', '+', $address);
 
-  public function getCodeClubs($address) {
-
-    $url = GOOGLE_MAPS_ADDRESS_END_POINT . preg_replace('/\s+/', '+', $address);
-
-    $response = wp_remote_get($url);
+     $response = wp_remote_get($url);
 
     if (is_wp_error($response)) {
       $this->flash_messages->createError(__("Could not resolve the address", 'ccw_countries'));
+	  return $response;
     } else {
       $geocode_data =  json_decode(wp_remote_retrieve_body($response), true);
       $location = $geocode_data['results']['0']['geometry']['location'];
-      $ccw_api = new CCW_API();
-      $ccw_api_response = $ccw_api->getNearbyCodeClubs($location['lat'], $location['lng'], 1);
+	  return  $location;
+	}
+  
+  }
+  public function getCodeClubs($address) {
+    $location = $this->getCoordinates ( $address );
+    if (is_wp_error ( $location ))
+            return;
+        $ccw_api = new CCW_API ();
+        $ccw_api_response = $ccw_api->getNearbyCodeClubs($location['lat'], $location['lng'], 1);
 
-      if (!is_wp_error($ccw_api_response)) {
+    if (!is_wp_error($ccw_api_response)) {
         $_SESSION['code_clubs'] = json_decode(wp_remote_retrieve_body($ccw_api_response), true);
-      } else {
-        $this->flash_messages->createError(__("No code clubs found.", 'ccw_countries'));
-      }
-
     }
-
+     else {
+        $this->flash_messages->createError(__("No code clubs found.", 'ccw_countries'));
+    }
     $this->flash_messages->display();
 
     return $_SESSION['code_clubs'];
