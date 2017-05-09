@@ -20,7 +20,7 @@
     </dt>
     <dd class="c-def-list__definition"><?php echo htmlspecialchars($_SESSION['club']['contact']['email']) ?></dd>
     <dt class="c-def-list__term">
-      <?php esc_html_e("Skype", 'ccw_countries'); ?>
+      Skype
     </dt>
     <dd class="c-def-list__definition"><?php echo htmlspecialchars($_SESSION['club']['contact']['skype']) ?></dd>
   </dl>
@@ -52,23 +52,23 @@
     </dt>
     <dd class="c-def-list__definition"><?php echo htmlspecialchars($_SESSION['club']['venue']['url']) ?></dd>
     <dt class="c-def-list__term">
-      <?php esc_html_e("Address 1", 'ccw_countries'); ?>
+      <?php esc_html_e("Street address 1", 'ccw_countries'); ?>
     </dt>
     <dd class="c-def-list__definition"><?php echo htmlspecialchars($_SESSION['club']['venue']['address']['address_1']) ?></dd>
     <dt class="c-def-list__term">
-      <?php esc_html_e("Address 2", 'ccw_countries'); ?>
+      <?php esc_html_e("Street address 2", 'ccw_countries'); ?>
     </dt>
     <dd class="c-def-list__definition"><?php echo htmlspecialchars($_SESSION['club']['venue']['address']['address_2']) ?></dd>
     <dt class="c-def-list__term">
-      <?php esc_html_e("City", 'ccw_countries'); ?>
+      <?php esc_html_e("Town / City", 'ccw_countries'); ?>
     </dt>
     <dd class="c-def-list__definition"><?php echo htmlspecialchars($_SESSION['club']['venue']['address']['city']) ?></dd>
     <dt class="c-def-list__term">
-      <?php esc_html_e("Region", 'ccw_countries'); ?>
+      <?php esc_html_e("Region / State", 'ccw_countries'); ?>
     </dt>
     <dd class="c-def-list__definition"><?php echo htmlspecialchars($_SESSION['club']['venue']['address']['region']) ?></dd>
     <dt class="c-def-list__term">
-      <?php esc_html_e("Postcode", 'ccw_countries'); ?>
+      <?php esc_html_e("Postcode / Zipcode", 'ccw_countries'); ?>
     </dt>
     <dd class="c-def-list__definition"><?php echo htmlspecialchars($_SESSION['club']['venue']['address']['postcode']) ?></dd>
   </dl>

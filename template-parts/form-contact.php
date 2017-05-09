@@ -46,7 +46,7 @@
     ?>
 
     <?php echo $templates->render('input',
-      ['title' => __('Your email', 'ccw_countries'),
+      ['title' => __('Your email address', 'ccw_countries'),
         'attributes' => [
           'id' => 'contact-email',
           'value' => use_if_set($_POST, ['contact-email'], '', 'htmlspecialchars_with_quotes'),

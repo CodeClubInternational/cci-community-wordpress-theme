@@ -144,7 +144,7 @@
     ?>
 
     <?php echo $templates->render('input',
-      ['title' => __('Town / City:', 'ccw_countries'),
+      ['title' => __('Town / City', 'ccw_countries'),
         'error' => use_if_set($error_messages, ['venue.address.city']),
         'attributes' => [
           'id' => 'club[venue_attributes][address_attributes][city]',
@@ -155,7 +155,7 @@
     ?>
 
     <?php echo $templates->render('input',
-        ['title' => __('Region', 'ccw_countries'),
+        ['title' => __('Region / State', 'ccw_countries'),
           'error' => use_if_set($error_messages, ['venue.address.region']),
           'attributes' => [
             'id' => 'club[venue_attributes][address_attributes][region]',
@@ -165,7 +165,7 @@
     ?>
 
     <?php echo $templates->render('input',
-      ['title' => __('Postcode', 'ccw_countries'),
+      ['title' => __('Postcode / Zipcode', 'ccw_countries'),
         'error' => use_if_set($error_messages, ['venue.address.postcode']),
         'attributes' => [
           'id' => 'club[venue_attributes][address_attributes][postcode]',

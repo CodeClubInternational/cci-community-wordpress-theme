@@ -1,14 +1,17 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Project-Id-Version: CCW Countries\n"
-"POT-Creation-Date: 2017-02-02 13:38+0000\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/cci-community-"
+"wordpress-theme\n"
+"POT-Creation-Date: 2017-03-20 08:25:01+00:00\n"
 "PO-Revision-Date: 2017-02-02 13:48+0000\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -16,7 +19,6 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: \n"
 "Language: ru_RU\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
@@ -34,12 +36,14 @@ msgid "Try the navigation menu above or search for the content"
 msgstr ""
 "Пожалуйста, воспользуйтесь меню на панеле сверху или введите запрос в поиск."
 
+#: archive.php:21 index.php:24
+msgid "Archives"
+msgstr ""
+
 #: comments.php:31
-#, php-format
-msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Один комментарий для &ldquo;%2$s&rdquo;"
+msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
@@ -59,35 +63,35 @@ msgstr "Новые комментарии"
 msgid "Comments are closed."
 msgstr "Комментарии закрыты."
 
-#: functions.php:42
+#: functions.php:43
 msgid "Primary Navigation"
 msgstr "Основное меню навигации"
 
-#: functions.php:43
+#: functions.php:44
 msgid "Footer Nav 1"
 msgstr "Нижний колонтитул Nav 1"
 
-#: functions.php:44
+#: functions.php:45
 msgid "Footer Nav 2"
 msgstr "Нижний колонтитул Nav 2"
 
-#: functions.php:45
+#: functions.php:46
 msgid "Footer Nav 3"
 msgstr "Нижний колонтитул Nav 3"
 
-#: functions.php:46
+#: functions.php:47
 msgid "Footer Nav 4"
 msgstr "Нижний колонтитул Nav 4"
 
-#: functions.php:47
+#: functions.php:48
 msgid "Club Navigation Menu"
 msgstr ""
 
-#: inc/club-session.php:26
+#: inc/club-session.php:25
 msgid "Signed out successfully!"
 msgstr "Вы успешно вышли"
 
-#: inc/club-session.php:37
+#: inc/club-session.php:36
 msgid "You have to be signed in to view this page."
 msgstr "Вам нужно войти в систему для просмотра этой страницы."
 
@@ -95,90 +99,75 @@ msgstr "Вам нужно войти в систему для просмотра
 msgid "Something went wrong, please try again later."
 msgstr "Похоже, что-то пошло не так. Пожалуйста, повторите попытку позже!"
 
-#: inc/host-volunteer-matching.php:24
-msgid "Could not resolve the address"
-msgstr ""
-
-#: inc/host-volunteer-matching.php:34
+#: inc/host-volunteer-matching-transient.php:19
+#: inc/host-volunteer-matching-transient.php:38
+#: inc/host-volunteer-matching-transient.php:57
+#: inc/host-volunteer-matching-transient.php:82
+#: inc/host-volunteer-matching.php:42
 msgid "No code clubs found."
 msgstr "Мы не смогли найти кружки по вашему запросу."
 
-#: inc/set-up/menu-setup.php:5 template-parts/page-matching.php:14
-msgid "Find Club"
-msgstr "Найти кружок"
+#: inc/host-volunteer-matching-transient.php:71
+#: inc/host-volunteer-matching.php:22
+msgid "Could not resolve the address"
+msgstr ""
 
-#: inc/set-up/menu-setup.php:16
-msgid "Your Club"
-msgstr "Ваш кружок"
+#: inc/set-up/menu-setup.php:9
+msgid "Your Account"
+msgstr ""
 
-#: inc/set-up/menu-setup.php:17
+#: inc/set-up/menu-setup.php:10
 msgid "Sign Out"
 msgstr "Выход"
 
-#: inc/set-up/menu-setup.php:19 template-sign-in.php:9
+#: inc/set-up/menu-setup.php:12 template-sign-in.php:9
 msgid "Sign In"
 msgstr "Войти"
 
-#: inc/template-tags.php:28
-#, php-format
-msgctxt "post date"
-msgid "Posted on %s"
-msgstr "Опубликовано %s"
-
-#: inc/template-tags.php:33
-#, php-format
-msgctxt "post author"
+#: inc/template-tags.php:19
 msgid "by %s"
-msgstr "от %s"
+msgstr ""
 
-#: inc/template-tags.php:50 inc/template-tags.php:56
+#: inc/template-tags.php:47
+msgid "Posted on"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:59
 msgid ", "
 msgstr ","
 
-#: inc/template-tags.php:52
-#, php-format
-msgid "Posted in %1$s"
-msgstr "Опубликовано в %1$s"
+#: inc/template-tags.php:78
+msgid "Categories"
+msgstr ""
 
-#: inc/template-tags.php:58
-#, php-format
-msgid "Tagged %1$s"
-msgstr "Метки %1$s"
+#: inc/template-tags.php:82
+msgid "Tags"
+msgstr ""
 
-#: inc/template-tags.php:64
-msgid "Leave a comment"
-msgstr "Оставьте коментарий"
-
-#: inc/template-tags.php:64
-msgid "1 Comment"
-msgstr "1 Комментарий"
-
-#: inc/template-tags.php:64
-msgid "% Comments"
-msgstr "% комментариев"
-
-#: inc/template-tags.php:71
-#, php-format
-msgid "Edit %s"
-msgstr "Редактировать %s"
+#. translators: %s: Name of current post
+#: inc/template-tags.php:111
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
 
 #: search.php:19
-#, php-format
 msgid "Search Results for: %s"
 msgstr "Результаты поиска: %s"
 
 #: template-club-edit.php:12
-msgid "Edit Club"
-msgstr "Редактировать"
+msgid "Edit"
+msgstr ""
 
 #: template-club.php:14 template-parts/club/show-club.php:3
-msgid "Club"
-msgstr "Ваш кружок"
+msgid "Account"
+msgstr ""
 
-#: template-contact.php:12 template-parts/page-matching.php:62
-msgid "Contact Club Host"
-msgstr "Отправить сообщение руководителю кружка"
+#: template-contact.php:12 template-parts/club/show-club.php:13
+msgid "Contact"
+msgstr "Контактное лицо"
 
+#. #-#-#-#-#  cci-community-wordpress-theme.pot (CCW Countries 1.4.4)  #-#-#-#-#
+#. Template Name of the plugin/theme
 #: template-forgotten-sign-in-details.php:10
 msgid "Forgotten Sign In Details"
 msgstr "Забыли имя пользователя или пароль?"
@@ -201,147 +190,160 @@ msgstr "Скачать учебные метериалы"
 msgid "Successfully edited!"
 msgstr "Данные успешно изменены."
 
-#: template-parts/club/form-edit-club.php:53
-msgid "Venue details:"
-msgstr "Место проведения:"
-
-#: template-parts/club/form-edit-club.php:56
-#: template-parts/club/form-register.php:43
-msgid "Venue name"
-msgstr "Названия места проведения"
-
-#: template-parts/club/form-edit-club.php:68
-#: template-parts/club/show-club.php:19
-msgid "Looking for Volunteer"
-msgstr "Ищете волонтера?"
-
-#: template-parts/club/form-edit-club.php:79
-#: template-parts/club/form-register.php:54
-msgid "Venue website"
-msgstr "Сайт места проведения"
-
-#: template-parts/club/form-edit-club.php:90
-#: template-parts/club/form-register.php:65
-msgid "Street address 1"
-msgstr "Адрес 1"
-
-#: template-parts/club/form-edit-club.php:101
-#: template-parts/club/form-register.php:76
-msgid "Street address 2"
-msgstr "Адрес 2"
-
-#: template-parts/club/form-edit-club.php:111
-#: template-parts/club/form-register.php:86
-msgid "Town / City:"
-msgstr "Город, населенный пункт"
-
-#: template-parts/club/form-edit-club.php:122
-msgid "Region / State:"
-msgstr "Регион"
-
-#: template-parts/club/form-edit-club.php:132
-msgid "Postcode / Zipcode"
-msgstr "Почтовый индекс"
-
-#: template-parts/club/form-edit-club.php:142
-#: template-parts/club/form-register.php:117
-msgid "Club Skype username"
-msgstr "Skype"
-
-#: template-parts/club/form-edit-club.php:153
-msgid "Contact details:"
-msgstr "Контакная информация"
-
-#: template-parts/club/form-edit-club.php:155
-#: template-parts/club/form-register.php:156
-msgid "Your name and email address will never be displayed publicly"
-msgstr "Ваше имя и адрес не будут опубликованы на нашем сайте."
-
-#: template-parts/club/form-edit-club.php:158
-#: template-parts/club/form-register.php:132 template-parts/form-contact.php:39
-msgid "Your name"
-msgstr "ФИО"
-
-#: template-parts/club/form-edit-club.php:169
-#: template-parts/club/form-register.php:144
-msgid "Your email address"
-msgstr "Email"
-
-#: template-parts/club/form-register.php:30
-msgid "Your club has now been registered"
-msgstr "Ваш кружок успешно зарегестрирован."
-
-#: template-parts/club/form-register.php:40
-msgid "Venue details"
-msgstr "Место проведения"
-
-#: template-parts/club/form-register.php:97
-#: template-parts/club/show-club.php:41
-msgid "Region"
-msgstr "Регион"
-
-#: template-parts/club/form-register.php:107
-#: template-parts/club/show-club.php:45
-msgid "Postcode"
-msgstr "Почтовый индекс"
-
-#: template-parts/club/form-register.php:129
+#: template-parts/club/form-edit-club.php:34
+#: template-parts/club/form-register-a-club.php:39
+#: template-parts/club/form-register-a-venue.php:40
 msgid "Contact details"
 msgstr "Контакная информация"
 
-#: template-parts/club/form-register.php:160
+#: template-parts/club/form-edit-club.php:37
+#: template-parts/club/form-register-a-club.php:42
+#: template-parts/club/form-register-a-venue.php:43
+#: template-parts/form-contact.php:39
+msgid "Your name"
+msgstr "ФИО"
+
+#: template-parts/club/form-edit-club.php:48
+#: template-parts/club/form-register-a-club.php:54
+#: template-parts/club/form-register-a-venue.php:55
+#: template-parts/form-contact.php:49
+msgid "Your email address"
+msgstr "Email"
+
+#: template-parts/club/form-edit-club.php:59
+#: template-parts/club/form-register-a-club.php:82
+#: template-parts/club/form-register-a-venue.php:67
+msgid "Your name and email address will never be displayed publicly"
+msgstr "Ваше имя и адрес не будут опубликованы на нашем сайте."
+
+#: template-parts/club/form-edit-club.php:84
+#: template-parts/club/form-register-a-club.php:101
+#: template-parts/club/form-register-a-venue.php:86
+msgid "Venue details"
+msgstr "Место проведения"
+
+#: template-parts/club/form-edit-club.php:87
+#: template-parts/club/form-register-a-club.php:104
+#: template-parts/club/form-register-a-venue.php:89
+msgid "Venue name"
+msgstr "Названия места проведения"
+
+#: template-parts/club/form-edit-club.php:100
+#: template-parts/club/show-club.php:38
+msgid "Looking for Volunteer"
+msgstr "Ищете волонтера?"
+
+#: template-parts/club/form-edit-club.php:113
+#: template-parts/club/show-club.php:45
+msgid "Happy to be contacted"
+msgstr ""
+
+#: template-parts/club/form-edit-club.php:124
+#: template-parts/club/form-register-a-club.php:115
+#: template-parts/club/form-register-a-venue.php:100
+msgid "Venue website"
+msgstr "Сайт места проведения"
+
+#: template-parts/club/form-edit-club.php:135
+#: template-parts/club/form-register-a-club.php:126
+#: template-parts/club/form-register-a-venue.php:111
+#: template-parts/club/show-club.php:55
+msgid "Street address 1"
+msgstr "Адрес 1"
+
+#: template-parts/club/form-edit-club.php:146
+#: template-parts/club/form-register-a-club.php:137
+#: template-parts/club/form-register-a-venue.php:122
+#: template-parts/club/show-club.php:59
+msgid "Street address 2"
+msgstr "Адрес 2"
+
+#: template-parts/club/form-edit-club.php:156
+#: template-parts/club/form-register-a-club.php:147
+#: template-parts/club/form-register-a-venue.php:132
+#: template-parts/club/show-club.php:63
+msgid "Town / City"
+msgstr ""
+
+#: template-parts/club/form-edit-club.php:167
+#: template-parts/club/form-register-a-club.php:158
+#: template-parts/club/form-register-a-venue.php:143
+#: template-parts/club/show-club.php:67
+msgid "Region / State"
+msgstr ""
+
+#: template-parts/club/form-edit-club.php:177
+#: template-parts/club/form-register-a-club.php:168
+#: template-parts/club/form-register-a-venue.php:153
+#: template-parts/club/show-club.php:71
+msgid "Postcode / Zipcode"
+msgstr "Почтовый индекс"
+
+#: template-parts/club/form-register-a-club.php:29
+#: template-parts/club/form-register-a-venue.php:30
+msgid "Your club has now been registered"
+msgstr "Ваш кружок успешно зарегестрирован."
+
+#: template-parts/club/form-register-a-club.php:68
+msgid "Are you a host or a volunteer?"
+msgstr ""
+
+#: template-parts/club/form-register-a-club.php:179
+msgid "Are you a happy for people to be able to contact your club?"
+msgstr ""
+
+#: template-parts/club/form-register-a-club.php:193
+#: template-parts/club/form-register-a-venue.php:183
 msgid "I accept the"
 msgstr "Я согласен с "
 
-#: template-parts/club/form-register.php:160
+#: template-parts/club/form-register-a-club.php:193
+#: template-parts/club/form-register-a-venue.php:183
 msgid "terms &amp; conditions"
 msgstr "условиями пользовательского соглашения."
 
-#: template-parts/club/form-register.php:183
+#: template-parts/club/form-register-a-club.php:204
 msgid "Create a Code Club"
 msgstr "Создать кружок Code Club"
+
+#: template-parts/club/form-register-a-venue.php:164
+msgid "Are you happy for people to be able to contact your venue?"
+msgstr ""
+
+#: template-parts/club/form-register-a-venue.php:177
+msgid ""
+"Please, select yes so that volunteers can contact you.\n"
+"    Your can change that at any time after you log in to the site."
+msgstr ""
+
+#. #-#-#-#-#  cci-community-wordpress-theme.pot (CCW Countries 1.4.4)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: template-parts/club/form-register-a-venue.php:194
+#: template-register-a-venue.php:9 template-register.php:26
+msgid "Register a Venue"
+msgstr ""
 
 #: template-parts/club/show-club.php:5
 #: template-parts/club/sign-in/form-sign-in.php:48
 msgid "Username"
 msgstr "Имя пользователя"
 
-#: template-parts/club/show-club.php:13
-msgid "Venue"
-msgstr "Место проведения"
-
-#: template-parts/club/show-club.php:15 template-parts/club/show-club.php:55
+#: template-parts/club/show-club.php:15 template-parts/club/show-club.php:33
 msgid "Name"
 msgstr "Имя"
 
-#: template-parts/club/show-club.php:25
-msgid "Website"
-msgstr "Сайт"
-
-#: template-parts/club/show-club.php:29
-msgid "Address 1"
-msgstr "Адрес 1"
-
-#: template-parts/club/show-club.php:33
-msgid "Address 2"
-msgstr "Адрес 2"
-
-#: template-parts/club/show-club.php:37
-msgid "City"
-msgstr "Город, населенный пункт"
-
-#: template-parts/club/show-club.php:53
-msgid "Contact"
-msgstr "Контактное лицо"
-
-#: template-parts/club/show-club.php:59
+#: template-parts/club/show-club.php:19
 #: template-parts/club/sign-in/form-forgotten-sign-in-details.php:31
 msgid "Email"
 msgstr "Email"
 
-#: template-parts/club/show-club.php:63
-msgid "Skype"
-msgstr "Skype"
+#: template-parts/club/show-club.php:31
+msgid "Venue"
+msgstr "Место проведения"
+
+#: template-parts/club/show-club.php:51
+msgid "Website"
+msgstr "Сайт"
 
 #: template-parts/club/sign-in/form-first-password.php:20
 #: template-parts/club/sign-in/form-set-new-password.php:20
@@ -379,7 +381,6 @@ msgid "Nothing Found"
 msgstr "Ничего не найдено"
 
 #: template-parts/content-none.php:29
-#, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "Готовы опубликовать свой первый пост? <a href=\"%1$s\">Старт тут</a>."
@@ -401,8 +402,8 @@ msgstr "Ничего не найдено. Попробуйте воспольз�
 msgid "Pages:"
 msgstr "Страницы:"
 
+#. translators: %s: Name of current post.
 #: template-parts/content.php:33
-#, php-format
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Читать полностью %s <span class=\"meta-nav\">&rarr;</span>"
 
@@ -418,10 +419,6 @@ msgstr "Волонтер отправил вам сообщение"
 msgid "Email has been sent"
 msgstr "Email отправлен!"
 
-#: template-parts/form-contact.php:49
-msgid "Your email"
-msgstr "Email"
-
 #: template-parts/form-contact.php:59
 msgid "Message"
 msgstr "Сообщение"
@@ -434,9 +431,13 @@ msgstr "(обязательно)"
 msgid "Send Message"
 msgstr "Отправить"
 
+#: template-parts/page-matching.php:14
+msgid "Find Venue"
+msgstr ""
+
 #: template-parts/page-matching.php:17
-msgid "Let's find a Club near you."
-msgstr "Найдите кружок рядом с вами"
+msgid "Let's find a venue near you."
+msgstr ""
 
 #: template-parts/page-matching.php:22
 msgid "Keep this field blank"
@@ -450,9 +451,13 @@ msgstr "Адрес"
 msgid "Search"
 msgstr "Поиск"
 
-#: template-parts/page-matching.php:42
+#: template-parts/page-matching.php:43
 msgid "Search results:"
 msgstr "Результаты поиска:"
+
+#: template-parts/page-matching.php:65
+msgid "Contact Venue"
+msgstr ""
 
 #: template-parts/shared/new-password.php:33
 msgid "New password was successfully set"
@@ -470,6 +475,8 @@ msgstr "Новый пароль"
 msgid "New password confirmation"
 msgstr "Повторите новый пароль"
 
+#. #-#-#-#-#  cci-community-wordpress-theme.pot (CCW Countries 1.4.4)  #-#-#-#-#
+#. Template Name of the plugin/theme
 #: template-parts/shared/new-password.php:99
 msgid "Set New Password"
 msgstr "Создать новый пароль"
@@ -478,9 +485,25 @@ msgstr "Создать новый пароль"
 msgid "Submit"
 msgstr "Отпрвить"
 
-#: template-register.php:9
+#. #-#-#-#-#  cci-community-wordpress-theme.pot (CCW Countries 1.4.4)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: template-register-a-club.php:9
+msgid "Register a Club"
+msgstr ""
+
+#. #-#-#-#-#  cci-community-wordpress-theme.pot (CCW Countries 1.4.4)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: template-register.php:9 template-register.php:19 template-register.php:31
 msgid "Register"
 msgstr "Зарегистрировать"
+
+#: template-register.php:15
+msgid "Register an active Code Club"
+msgstr ""
+
+#: template-register.php:27
+msgid "Explanation"
+msgstr ""
 
 #: template-welcome.php:9
 msgid "Welcome, "
@@ -510,3 +533,125 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "https://codeclubworld.org"
 msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Archive"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Change Password"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Edit Club"
+msgstr "Редактировать"
+
+#. Template Name of the plugin/theme
+msgid "Club"
+msgstr "Ваш кружок"
+
+#. Template Name of the plugin/theme
+msgid "Contact Form"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Download Resources"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Find Club"
+msgstr "Найти кружок"
+
+#. Template Name of the plugin/theme
+msgid "Home"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Sign in"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Thank you for Registering"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Welcome"
+msgstr ""
+
+#~ msgctxt "comments title"
+#~ msgid "One thought on &ldquo;%2$s&rdquo;"
+#~ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+#~ msgstr[0] "Один комментарий для &ldquo;%2$s&rdquo;"
+#~ msgstr[1] ""
+#~ msgstr[2] ""
+
+#~ msgid "Your Club"
+#~ msgstr "Ваш кружок"
+
+#~ msgctxt "post date"
+#~ msgid "Posted on %s"
+#~ msgstr "Опубликовано %s"
+
+#~ msgctxt "post author"
+#~ msgid "by %s"
+#~ msgstr "от %s"
+
+#~ msgid "Posted in %1$s"
+#~ msgstr "Опубликовано в %1$s"
+
+#~ msgid "Tagged %1$s"
+#~ msgstr "Метки %1$s"
+
+#~ msgid "Leave a comment"
+#~ msgstr "Оставьте коментарий"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 Комментарий"
+
+#~ msgid "% Comments"
+#~ msgstr "% комментариев"
+
+#~ msgid "Edit %s"
+#~ msgstr "Редактировать %s"
+
+#~ msgid "Contact Club Host"
+#~ msgstr "Отправить сообщение руководителю кружка"
+
+#~ msgid "Venue details:"
+#~ msgstr "Место проведения:"
+
+#~ msgid "Town / City:"
+#~ msgstr "Город, населенный пункт"
+
+#~ msgid "Region / State:"
+#~ msgstr "Регион"
+
+#~ msgid "Club Skype username"
+#~ msgstr "Skype"
+
+#~ msgid "Contact details:"
+#~ msgstr "Контакная информация"
+
+#~ msgid "Region"
+#~ msgstr "Регион"
+
+#~ msgid "Postcode"
+#~ msgstr "Почтовый индекс"
+
+#~ msgid "Address 1"
+#~ msgstr "Адрес 1"
+
+#~ msgid "Address 2"
+#~ msgstr "Адрес 2"
+
+#~ msgid "City"
+#~ msgstr "Город, населенный пункт"
+
+#~ msgid "Skype"
+#~ msgstr "Skype"
+
+#~ msgid "Your email"
+#~ msgstr "Email"
+
+#~ msgid "Let's find a Club near you."
+#~ msgstr "Найдите кружок рядом с вами"

@@ -31,7 +31,7 @@
 
 
   <fieldset class="c-form__fieldset">
-    <h3 class="u-text--center"><?php esc_html_e("Contact details:", 'ccw_countries'); ?></h3>
+    <h3 class="u-text--center"><?php esc_html_e("Contact details", 'ccw_countries'); ?></h3>
 
     <?php echo $templates->render('input',
       ['title' => __('Your name', 'ccw_countries'),
@@ -56,8 +56,7 @@
       ])
     ?>
 
-    <?php echo $templates->render('info', ['message' => __("Your name and email address will never 
-                                                            be displayed publicly", 'ccw_countries')]);?>
+    <?php echo $templates->render('info', ['message' => __("Your name and email address will never be displayed publicly", 'ccw_countries')]);?>
 
   </fieldset>
 
@@ -82,7 +81,7 @@
   ?>
 
   <fieldset class="c-form__fieldset">
-    <h3 class="u-text--center"><?php esc_html_e('Venue details:', 'ccw_countries'); ?></h3>
+    <h3 class="u-text--center"><?php esc_html_e('Venue details', 'ccw_countries'); ?></h3>
 
     <?php echo $templates->render('input',
       ['title' => __('Venue name', 'ccw_countries'),
@@ -154,7 +153,7 @@
     ?>
 
     <?php echo $templates->render('input',
-      ['title' => __('Town / City:', 'ccw_countries'),
+      ['title' => __('Town / City', 'ccw_countries'),
         'error' => use_if_set($error_messages, ['venue.address.city']),
         'attributes' => [
           'id' => 'club[venue_attributes][address_attributes][city]',
@@ -165,7 +164,7 @@
     ?>
 
     <?php echo $templates->render('input',
-      ['title' => __('Region / State:', 'ccw_countries'),
+      ['title' => __('Region / State', 'ccw_countries'),
         'error' => use_if_set($error_messages, ['venue.address.region']),
         'attributes' => [
           'id' => 'club[venue_attributes][address_attributes][region]',
@@ -185,7 +184,7 @@
     ?>
 
     <?php echo $templates->render('input',
-      ['title' => __('Club Skype username', 'ccw_countries'),
+      ['title' => "Skype", 'ccw_countries'),
         'error' =>  use_if_set($error_messages, ['contact.skype']),
         'attributes' => [
           'id' => 'club[contact_attributes][skype]',
